@@ -294,6 +294,12 @@ h3 {
   gap: 1rem;
 }
 
+.project-results {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1rem;
+}
+
 .project-column {
   min-height: 100%;
   padding: 1.3rem;
@@ -312,6 +318,39 @@ h3 {
   width: 100%;
 }
 
+.result-card {
+  margin: 0;
+  padding: 1rem;
+  border-radius: calc(var(--radius-lg) - 8px);
+  border: 1px solid var(--line);
+  background: rgba(255, 255, 255, 0.78);
+}
+
+.result-card img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 14px;
+  border: 1px solid rgba(22, 48, 58, 0.08);
+  background: #ffffff;
+}
+
+.result-card figcaption {
+  padding-top: 0.95rem;
+}
+
+.result-card strong {
+  display: block;
+  margin: 0.35rem 0 0.45rem;
+  font-size: 1.05rem;
+  line-height: 1.35;
+}
+
+.result-card p {
+  margin-bottom: 0;
+  color: var(--muted);
+}
+
 .accent-card {
   background: linear-gradient(180deg, rgba(215, 232, 231, 0.95), rgba(255, 255, 255, 0.95));
 }
@@ -324,7 +363,8 @@ h3 {
   .hero,
   .section-grid,
   .project-overview,
-  .project-details {
+  .project-details,
+  .project-results {
     grid-template-columns: 1fr;
   }
 
